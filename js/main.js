@@ -1,25 +1,13 @@
-import $ from 'jquery';
-import _ from 'underscore';
-import moment from 'moment';
-import Backbone from 'backbone';
-import parse from './parse_auth';
-import {TodoCollection} from './resources';
-import {TodoView} from './views';
+import React from 'react';
+import ReactDom from 'react-dom';
+import Router from './router';
+// import './ajaxSetup';
 
-$.ajaxSetup({
-  headers: {
-    'X-Parse-Application-Id': parse.APP_ID,
-    'X-Parse-REST-API-Key': parse.API_KEY
-  }
-});
+let element = document.querySelector('app');
+let router= new Router(element);
+router.start();
 
-let todos = new TodoCollection();
-
-todos.fetch().then(function() {
-  
-  $('.wrapper').html(new TodoView(todos).render().$el);
-
-});
+window.router=router;
 
 
-console.log('Hello, World');
+console.log('main js file');
