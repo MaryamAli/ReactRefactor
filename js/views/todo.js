@@ -7,7 +7,7 @@ import $ from 'jquery';
 import 'jquery-serializejson';
 
 
-
+//THIS IS THE SMALLEST PIECE
 /*
  *
  * This is a template for each todo item.

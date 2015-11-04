@@ -11,7 +11,8 @@ export default Backbone.Router.extend({
 routes:
 {
 "" : "showHomeView",
-"Home" : "showHomeView"
+"Home" : "showHomeView",
+
 
 
 
@@ -39,7 +40,7 @@ render (component) {
 
   start: function (){
     Backbone.history.start();
-  }
+    }
 });
 console.log('router file');
 

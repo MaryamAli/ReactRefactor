@@ -1,7 +1,7 @@
-import TodoModel from './todo_model';
-import TodoCollection from './todo_collection';
+import TodoModelReact from './TodoModelReact';
+import TodoCollectionReact from './TodoCollectionReact';
 
-export {
-  TodoModel,
-  TodoCollection
+export{ 
+  TodoModelReact,
+  TodoCollectionReact
 };

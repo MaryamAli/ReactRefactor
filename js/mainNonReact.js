@@ -17,9 +17,12 @@ let todos = new TodoCollection();
 
 todos.fetch().then(function() {
   
+  //insesrt new todoView
+  //calls constructor function of todoView
+  //get element out of that, hand to html
   $('.wrapper').html(new TodoView(todos).render().$el);
 
 });
 
 
-console.log('nonReact Main ');
+console.log('nonReact Main');
